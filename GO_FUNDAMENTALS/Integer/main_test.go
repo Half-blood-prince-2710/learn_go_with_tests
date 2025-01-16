@@ -1,8 +1,15 @@
 package integer
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
-
+func ExampleAdd() {
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
+}
 
 func TestAdd(t *testing.T) {
 	t.Run("sum of two number",func(t *testing.T) {
