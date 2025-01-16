@@ -2,10 +2,15 @@ package iteration
 
 
 
-func Repeat(r string) string {
+
+func Repeat(char string, count int) string {
+	if count<0 {
+		return "Repeat count should be greater than equal to 0"
+	}
 	var repeated string
-	for i:=1; i<6; i++ {
-		repeated= repeated + r
+	for i:=0; i<count; i++ {
+		repeated += char
 	}
 	return repeated
 }
+
