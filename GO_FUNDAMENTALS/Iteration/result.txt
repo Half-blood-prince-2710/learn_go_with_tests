@@ -1,4 +1,4 @@
-Rssult with normal string concatenation
+Result with normal string concatenation
 
 === RUN   TestIteration
 === RUN   TestIteration/repeating_char_5_times
@@ -28,7 +28,7 @@ ok      github.com/half-blood-prince/learn_go_with_tests/GO_FUNDAMENTALS/Iterati
 
 
 
-result eith strings.builder 
+result with strings.builder 
 
 === RUN   TestIteration
 === RUN   TestIteration/repeating_char_5_times
