@@ -2,16 +2,17 @@ package main
 
 import "testing"
 
+func TestWallet(t *testing.T) {
 
-func TestWallet(t *testing.T){
 	wallet := Wallet{}
 
-	wallet.Deposit(20)
+	wallet.Deposit(Bitcoin(10))
 
-	got:=wallet.Balance()
-	want:= 20
+	got := wallet.Balance()
 
-	if got!=want {
-		t.Errorf("got %d want %d",got,want)
+	want := Bitcoin(10)
+
+	if got != want {
+		t.Errorf("got %s want %s", got, want)
 	}
 }
